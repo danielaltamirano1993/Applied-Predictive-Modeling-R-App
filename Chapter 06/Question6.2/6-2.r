@@ -71,6 +71,12 @@ cat("\n")
 # cat("\n")
 # 
 # 
+# # Elastic Net Method
+# meatEls <- train(x = trainAbsorption , y = trainFat, method = "enet",
+#                  trControl = ctrl,
+#                  preProcess = c("center","scale"),
+#                  tuneGrid = expand.grid(lambda = c(0,.001,.01,.1,1), 
+#                                         fraction = seq(0.05,1,length=20)))
 # 
 # 
 # 
