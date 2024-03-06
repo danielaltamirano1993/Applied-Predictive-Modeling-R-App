@@ -5,13 +5,20 @@ library(elasticnet)
 library(lars)
 library(pls)
 
+data(permeability)
 
 #########################
+# question 6.2(b) 
 ######################### 
 cat("Before Non-Zero Variance, number of predictors in fingerprints is 1107: \n")
+print(str(fingerprints))
 cat("\n\n")
 
 cat("After Non-Zero Variance, number of predictors in fingerprints is 388: \n")
+NZVfingerprints <- nearZeroVar(fingerprints)
+noNZVfingerprints <- fingerprints[,-NZVfingerprints]
+print(str(noNZVfingerprints))
+cat("\n\n")
 
 #########################
 #########################
