@@ -29,3 +29,8 @@ cat("After Non-Zero Variance, number of predictors in fingerprints is 388: \n")
 
 cat("\n")
 
+# permeabiltyRg <- train(x = trainFingerprints , y = trainPermeability, method = "ridge",
+#                 trControl = ctrl,
+#                 preProcess = c("center","scale"),
+#                 tuneGrid = expand.grid(lambda = seq(0,1,length=15)))
+# 
