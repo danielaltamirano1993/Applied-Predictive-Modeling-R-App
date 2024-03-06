@@ -43,6 +43,10 @@ set.seed(12345)
 ctrl <- trainControl(method = "repeatedcv", repeats=5, number = 4)
 
 
+# PLS Model
+permeabiltyPLS <- train(x = trainFingerprints , y = trainPermeability,preProcess = c("center","scale"), method = "pls", tuneGrid = expand.grid(ncomp = 1:15), trControl = ctrl)
+print(permeabiltyPLS)
+plot(permeabiltyPLS, metric ="Rsquared", main = "PLS Tuning Parameter for Permeability Data")
 
 cat("\n")
 
