@@ -26,8 +26,12 @@ for ( i in 1: nrow(svmParam1)){
   
   svmPred1 <- if(i==1) tmp else rbind(tmp,svmPred1)
   
+  modelPrediction <- predict(rbfSVM, newdata = dataGrid)
+  plot(x,y)
+  points(x = dataGrid$x, y = modelPrediction[,1], type = "l", col = "blue")
   
 }
+svmPred1$costs <- factor(svmPred1$costs, levels=rev(levels(svmPred1$costs)))
 
 
 
