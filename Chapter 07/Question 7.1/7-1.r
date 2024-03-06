@@ -34,6 +34,9 @@ for ( i in 1: nrow(svmParam1)){
 svmPred1$costs <- factor(svmPred1$costs, levels=rev(levels(svmPred1$costs)))
 
 
+svmParam2 <- expand.grid(eps = c(0.01,0.05,0.1,0.5),
+                         costs = 2^c(-2,0,2,8),
+                         sigma=as.vector(sigest(y~x,data=sinData,frac=.75)))
 
 
 
