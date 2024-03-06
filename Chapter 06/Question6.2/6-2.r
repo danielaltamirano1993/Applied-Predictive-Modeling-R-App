@@ -82,6 +82,10 @@ cat("\n")
 # plot(meatEls)
 # cat("\n")
 # 
+# prediction<-predict(meatEls,testAbsorption)
+# accuracy1<-data.frame(obs=testFat,pred=prediction)
+# defaultSummary(accuracy1)
+# plot(accuracy1)
 # 
 # #########################
 # #########################
