@@ -78,6 +78,9 @@ cat("\n")
 #                  tuneGrid = expand.grid(lambda = c(0,.001,.01,.1,1), 
 #                                         fraction = seq(0.05,1,length=20)))
 # 
+# print(meatEls)
+# plot(meatEls)
+# cat("\n")
 # 
 # 
 # #########################
