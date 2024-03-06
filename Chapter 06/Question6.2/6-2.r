@@ -29,6 +29,7 @@ cat("After Non-Zero Variance, number of predictors in fingerprints is 388: \n")
 
 cat("\n")
 
+# # Ridge Regression Method
 # permeabiltyRg <- train(x = trainFingerprints , y = trainPermeability, method = "ridge",
 #                 trControl = ctrl,
 #                 preProcess = c("center","scale"),
@@ -44,3 +45,6 @@ cat("\n")
 #                    preProcess = c("center","scale"),
 #                    tuneGrid = expand.grid(fraction = seq(0.1,1,length=20)))
 # 
+# print(meatLasso)
+# plot(meatLasso)
+# cat("\n")
