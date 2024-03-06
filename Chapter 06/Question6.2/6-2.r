@@ -8,7 +8,10 @@ library(pls)
 
 #########################
 ######################### 
+cat("Before Non-Zero Variance, number of predictors in fingerprints is 1107: \n")
+cat("\n\n")
 
+cat("After Non-Zero Variance, number of predictors in fingerprints is 388: \n")
 
 #########################
 #########################
@@ -24,4 +27,5 @@ library(pls)
 
 
 
+cat("\n")
 
