@@ -34,8 +34,12 @@ cat("\n")
 #                 preProcess = c("center","scale"),
 #                 tuneGrid = expand.grid(lambda = seq(0,1,length=15)))
 # 
+# print(permeabiltyRg)
+# plot(permeabiltyRg, metric ="Rsquared", main = "Ridge Regression Tuning Parameter for Permeability Data")
 # 
 # 
+# # Lasso Regression Method
+# meatLasso <- train(x = trainFingerprints , y = trainPermeability, method = "lasso",
 #                    trControl = ctrl,
 #                    preProcess = c("center","scale"),
 #                    tuneGrid = expand.grid(fraction = seq(0.1,1,length=20)))
