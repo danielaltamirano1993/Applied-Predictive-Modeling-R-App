@@ -34,3 +34,9 @@ cat("\n")
 #                 preProcess = c("center","scale"),
 #                 tuneGrid = expand.grid(lambda = seq(0,1,length=15)))
 # 
+# 
+# 
+#                    trControl = ctrl,
+#                    preProcess = c("center","scale"),
+#                    tuneGrid = expand.grid(fraction = seq(0.1,1,length=20)))
+# 
