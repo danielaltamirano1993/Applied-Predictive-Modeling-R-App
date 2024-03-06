@@ -35,8 +35,12 @@ trainingRows =  createDataPartition(permeability, p = .75, list= FALSE)
 trainFingerprints <- noNZVfingerprints[trainingRows,]
 trainPermeability <- permeability[trainingRows,]
 
+testFingerprints <- noNZVfingerprints[-trainingRows,]
+testPermeability <- permeability[-trainingRows,]
 
+set.seed(12345)
 
+ctrl <- trainControl(method = "repeatedcv", repeats=5, number = 4)
 
 
 
