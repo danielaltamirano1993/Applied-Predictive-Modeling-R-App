@@ -24,10 +24,16 @@ cat("\n\n")
 #########################
 
 #########################
+# question 6.2(c) 
 ######################### 
 
+# stratified random sample splitting with 75% training and 25% testing
 
+set.seed(12345)
+trainingRows =  createDataPartition(permeability, p = .75, list= FALSE)
 
+trainFingerprints <- noNZVfingerprints[trainingRows,]
+trainPermeability <- permeability[trainingRows,]
 
 
 
