@@ -20,7 +20,11 @@ for ( i in 1: nrow(svmParam1)){
                  kernel="rbfdot",kpar="automatic",
                  C= svmParam1$costs[i],epsilon = svmParam1$eps[i])
   
+  tmp<-data.frame(x=dataGrid$x,y =predict(rbfSVM,newdata= dataGrid), 
+                  eps=paste("epsilon",format(svmParam1$eps)[i]),
+                  costs=paste("costs",format(svmParam1$costs)[i]))
   
+  svmPred1 <- if(i==1) tmp else rbind(tmp,svmPred1)
   
   
 }
