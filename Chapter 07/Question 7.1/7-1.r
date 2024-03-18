@@ -38,6 +38,14 @@ svmParam2 <- expand.grid(eps = c(0.01,0.05,0.1,0.5),
                          costs = 2^c(-2,0,2,8),
                          sigma=as.vector(sigest(y~x,data=sinData,frac=.75)))
 
+for ( i in 1: nrow(svmParam2)){
+  set.seed(121)
+  rbfSVM <- ksvm(x=x,y=y, data=sinData,
+                 kernel="rbfdot",
+                 kpar=list(sigma=svmParam2$sigma[i]),
+                 C= svmParam2$costs[i],
+                 epsilon = svmParam2$eps[i]
+                 )
   
   
 
