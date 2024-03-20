@@ -55,5 +55,10 @@ for ( i in 1: nrow(svmParam2)){
   )
   svmPred2 <- if(i==1) tmp else rbind(tmp,svmPred2)
   
+  modelPrediction <- predict(rbfSVM, newdata = dataGrid)
+  plot(x,y)
+  points(x = dataGrid$x, y = modelPrediction[,1], type = "l", col = "blue")
+  
+}
 
 
