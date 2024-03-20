@@ -47,6 +47,13 @@ for ( i in 1: nrow(svmParam2)){
                  epsilon = svmParam2$eps[i]
                  )
   
+  tmp<-data.frame(x=dataGrid$x,
+                  y =predict(rbfSVM,newdata= dataGrid), 
+                  eps=paste("epsilon",format(svmParam2$eps)[i]),
+                  costs=paste("costs",format(svmParam2$costs)[i]),
+                  sigma=paste("sigma",format(svmParam2$sigma,digits=2)[i])
+  )
+  svmPred2 <- if(i==1) tmp else rbind(tmp,svmPred2)
   
 
 
