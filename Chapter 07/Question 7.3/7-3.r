@@ -13,6 +13,8 @@ for (i in 1:100){
 colnames(absorp)<-colName
 
 
+# splitting data into 80% and 20% based on Fat Response
+set.seed(12345)
 
 
 
