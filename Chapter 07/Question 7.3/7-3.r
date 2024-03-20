@@ -28,6 +28,9 @@ ctrl <- trainControl(method = "repeatedcv", repeats=4)
 # # For neuralnetwork, find the correlation and delete the correlated data
 tooHigh <- findCorrelation(cor(trainAbsorption), cutoff = .80)
 
+#  the tooHigh gives 99 correlated datas
+trainXnnet1 = trainAbsorption[,-tooHigh]
+testXnnet1 = testAbsorption[,-tooHigh]
 
 
 
