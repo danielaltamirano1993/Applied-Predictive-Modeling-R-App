@@ -32,6 +32,12 @@ tooHigh <- findCorrelation(cor(trainAbsorption), cutoff = .80)
 trainXnnet1 = trainAbsorption[,-tooHigh]
 testXnnet1 = testAbsorption[,-tooHigh]
 
+set.seed(12344)
 
+library(nnet)
+library(caret)
+
+# without using PCA
+# to train in parallel to 5 processor
 
 
