@@ -23,7 +23,10 @@ testAbsorption <- absorp[-trainingRows, ]
 trainFat <- endpoints[trainingRows, 2]
 testFat <- endpoints[-trainingRows, 2]
 
+ctrl <- trainControl(method = "repeatedcv", repeats=4)
 
+# # For neuralnetwork, find the correlation and delete the correlated data
+tooHigh <- findCorrelation(cor(trainAbsorption), cutoff = .80)
 
 
 
