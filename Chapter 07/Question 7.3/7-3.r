@@ -49,4 +49,14 @@ nnetGrid1 <- expand.grid(.decay = c(0, 0.01, .1),
                         ## seeds.
                         .bag = FALSE)
 
+nnetTune1 <- train(trainAbsorption, trainFat,
+                  method = "avNNet",
+                  trControl = ctrl,
+                  preProc = c("center", "scale"),
+                  linout = TRUE,
+                  trace = FALSE,
+                  MaxNWts = 10 * (ncol(trainAbsorption) + 1) + 10 + 1,
+                  maxit = 500,
+                  tuneGrid = nnetGrid1)
+
 
