@@ -61,4 +61,6 @@ for ( i in 1: nrow(svmParam2)){
   
 }
 
+svmPred2$costs <- factor(svmPred2$costs, levels=rev(levels(svmPred2$costs)))
+svmPred2$sigma <- factor(svmPred2$sigma, levels=rev(levels(svmPred2$sigma)))
 
