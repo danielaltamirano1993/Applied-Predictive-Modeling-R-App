@@ -18,6 +18,10 @@ set.seed(12345)
 
 trainingRows =  createDataPartition(endpoints[,2], p = .80, list= FALSE)
 
+trainAbsorption <- absorp[ trainingRows, ]
+testAbsorption <- absorp[-trainingRows, ]
+trainFat <- endpoints[trainingRows, 2]
+testFat <- endpoints[-trainingRows, 2]
 
 
 
