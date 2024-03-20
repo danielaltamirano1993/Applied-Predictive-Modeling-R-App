@@ -16,6 +16,7 @@ colnames(absorp)<-colName
 # splitting data into 80% and 20% based on Fat Response
 set.seed(12345)
 
+trainingRows =  createDataPartition(endpoints[,2], p = .80, list= FALSE)
 
 
 
