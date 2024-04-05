@@ -71,6 +71,10 @@ stopCluster(cl)
 cl <- makePSOCKcluster(5)
 registerDoParallel(cl)
 
+                         ## The next option is to use bagging (see the
+                         ## next chapter) instead of different random
+                         ## seeds.
+
 
 
 
