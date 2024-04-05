@@ -62,6 +62,7 @@ nnetTune1 <- train(trainAbsorption, trainFat,
 prediction<-predict(nnetTune1,testAbsorption)
 accuracy<-data.frame(obs=testFat,pred=prediction)
 defaultSummary(accuracy)
+plot(accuracy)
 
 
 
