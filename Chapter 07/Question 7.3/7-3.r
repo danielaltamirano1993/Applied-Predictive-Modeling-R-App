@@ -59,4 +59,7 @@ nnetTune1 <- train(trainAbsorption, trainFat,
                   maxit = 500,
                   tuneGrid = nnetGrid1)
 
+prediction<-predict(nnetTune1,testAbsorption)
+
+
 
