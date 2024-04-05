@@ -104,6 +104,7 @@ summary(marsFit)
 # 
 set.seed(12345)
 marsGrid <- expand.grid(.degree = 1:2, .nprune = 2:18)
+marsTuned <- train(trainAbsorption, trainFat, method="earth",
                    tuneGrid = marsGrid,
                    trControl = ctrl)
 
