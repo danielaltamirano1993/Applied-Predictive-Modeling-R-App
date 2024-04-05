@@ -78,6 +78,8 @@ nnetGrid1 <- expand.grid(.decay = c(0, 0.01, .1),
                          ## seeds.
                          .bag = FALSE)
 
+nnetTune2 <- train(trainAbsorption, trainFat,
+
 
 
 
