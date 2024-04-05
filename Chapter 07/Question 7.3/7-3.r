@@ -103,6 +103,7 @@ marsFit <- earth(trainAbsorption,trainFat)
 summary(marsFit)
 # 
 set.seed(12345)
+marsGrid <- expand.grid(.degree = 1:2, .nprune = 2:18)
 
 # 
 
