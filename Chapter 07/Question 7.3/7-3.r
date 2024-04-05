@@ -79,6 +79,9 @@ nnetGrid1 <- expand.grid(.decay = c(0, 0.01, .1),
                          .bag = FALSE)
 
 nnetTune2 <- train(trainAbsorption, trainFat,
+                   method = "avNNet",
+                   trControl = ctrl,
+                   preProc = c("center", "scale","pca"),
 
 
 
