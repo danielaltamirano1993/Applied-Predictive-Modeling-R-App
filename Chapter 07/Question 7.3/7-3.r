@@ -66,5 +66,8 @@ plot(accuracy)
 ## When you are done:
 stopCluster(cl)
 
+# using PCA
+# to train in parallel to 5 processor
+cl <- makePSOCKcluster(5)
 
 
