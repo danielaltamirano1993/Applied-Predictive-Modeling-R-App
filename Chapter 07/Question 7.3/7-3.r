@@ -102,6 +102,7 @@ set.seed(12345)
 marsFit <- earth(trainAbsorption,trainFat)
 summary(marsFit)
 # 
+set.seed(12345)
 
 # 
 
