@@ -60,6 +60,7 @@ nnetTune1 <- train(trainAbsorption, trainFat,
                   tuneGrid = nnetGrid1)
 
 prediction<-predict(nnetTune1,testAbsorption)
+accuracy<-data.frame(obs=testFat,pred=prediction)
 
 
 
