@@ -97,6 +97,8 @@ stopCluster(cl)
 
 
 
+# # For MARS, using resampling method to tune the model  Selection Using GCV
+set.seed(12345)
 # 
 
 # 
