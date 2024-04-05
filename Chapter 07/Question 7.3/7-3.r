@@ -82,6 +82,9 @@ nnetTune2 <- train(trainAbsorption, trainFat,
                    method = "avNNet",
                    trControl = ctrl,
                    preProc = c("center", "scale","pca"),
+                   maxit = 500,
+                   tuneGrid = nnetGrid1)
+
 
 
 
