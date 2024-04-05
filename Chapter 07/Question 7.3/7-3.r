@@ -63,6 +63,8 @@ prediction<-predict(nnetTune1,testAbsorption)
 accuracy<-data.frame(obs=testFat,pred=prediction)
 defaultSummary(accuracy)
 plot(accuracy)
+## When you are done:
+stopCluster(cl)
 
 
 
