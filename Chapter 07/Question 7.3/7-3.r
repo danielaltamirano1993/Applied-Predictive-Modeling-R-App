@@ -134,5 +134,7 @@ knnDescr <- trainAbsorption[ ,-nearZeroVar(trainAbsorption)]
 set.seed(12345)
 knnTune <- train(trainAbsorption,trainFat,
                  method="knn",
+                 preProc = c("center","scale"),
+                 trControl = ctrl)
 # 
 
