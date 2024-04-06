@@ -14,6 +14,7 @@ data(permeability)
 
 cat("After Non-Zero Variance, number of predictors in fingerprints is 388: \n")
 NZVfingerprints <- nearZeroVar(fingerprints)
+print(str(noNZVfingerprints))
 
 
 
