@@ -128,3 +128,5 @@ defaultSummary(accuracy)
 plot(accuracy)
 
 
+# # For KNN, remove the near-zero-variance predictors 
+# # And, do the centering and scaling 
