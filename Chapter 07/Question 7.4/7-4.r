@@ -65,8 +65,10 @@ nnetTune <- train(trainXnnet, trainFat,
 prediction<-predict(nnetTune,testXnnet)
 accuracy<-data.frame(obs=testPermeability,pred=prediction)
 defaultSummary(accuracy)
+plot(accuracy)
 
 
+# # For MARS, using resampling method to tune the model  Selection Using GCV
 
 # 
 
