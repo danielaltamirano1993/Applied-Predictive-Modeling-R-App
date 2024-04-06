@@ -74,6 +74,7 @@ marsFit <- earth(trainFingerprints,trainPermeability)
 summary(marsFit)
 
 set.seed(12345)
+permeabilitymarsTuned <- train(trainFingerprints, trainPermeability,
                    trControl = ctrl)
 # 
 
