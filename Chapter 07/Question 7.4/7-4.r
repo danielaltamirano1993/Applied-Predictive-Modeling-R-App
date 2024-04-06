@@ -62,8 +62,7 @@ nnetTune <- train(trainXnnet, trainFat,
                   MaxNWts = 10 * (ncol(trainXnnet) + 1) + 10 + 1,
                   maxit = 500)
 
-
-
+prediction<-predict(nnetTune,testXnnet)
 
 
 
