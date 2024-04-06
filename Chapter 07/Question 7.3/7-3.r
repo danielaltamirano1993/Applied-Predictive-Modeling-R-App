@@ -124,5 +124,7 @@ svmRTuned <- train(trainAbsorption, trainFat, method="svmRadial",
 # 
 prediction<-predict(svmRTuned,testAbsorption)
 accuracy<-data.frame(obs=testFat,pred=prediction)
+defaultSummary(accuracy)
+plot(accuracy)
 
 
