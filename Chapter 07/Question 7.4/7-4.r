@@ -81,6 +81,7 @@ permeabilitymarsTuned <- train(trainFingerprints, trainPermeability,
                    trControl = ctrl)
 # 
 
+prediction<-predict(permeabilitymarsTuned,testFingerprints)
 
 #
 
