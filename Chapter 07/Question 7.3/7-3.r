@@ -119,6 +119,7 @@ plot(accuracy)
 set.seed(12345)
 svmRTuned <- train(trainAbsorption, trainFat, method="svmRadial",
                    tuneLength = 14,
+                   preProc = c("center", "scale"),
                    trControl = ctrl)
 # 
 
