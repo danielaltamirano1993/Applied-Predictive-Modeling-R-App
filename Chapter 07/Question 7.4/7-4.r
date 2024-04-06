@@ -106,4 +106,6 @@ plot(accuracy)
 # # For KNN, remove the near-zero-variance predictors 
 # # And, do the centering and scaling 
 permeabilityknnDescr <- trainFingerprints[ ,-nearZeroVar(trainFingerprints)]
+set.seed(12345)
+permeabilityknnTuned <- train(permeabilityknnDescr,trainPermeability,
 
