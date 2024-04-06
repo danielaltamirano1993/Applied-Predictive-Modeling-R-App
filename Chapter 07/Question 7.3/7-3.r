@@ -111,6 +111,7 @@ marsTuned <- train(trainAbsorption, trainFat, method="earth",
 prediction<-predict(marsTuned,testAbsorption)
 accuracy<-data.frame(obs=testFat,pred=prediction[,1])
 defaultSummary(accuracy)
+plot(accuracy)
 # 
 
 
