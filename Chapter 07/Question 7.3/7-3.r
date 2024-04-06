@@ -117,5 +117,7 @@ plot(accuracy)
 # # For SVM, using radial function is automatic and if the data are linear in regression should use
 # linear svm, otherwise radial SVM is good
 set.seed(12345)
+svmRTuned <- train(trainAbsorption, trainFat, method="svmRadial",
 # 
+
 
