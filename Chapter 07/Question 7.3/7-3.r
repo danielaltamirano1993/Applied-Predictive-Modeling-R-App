@@ -118,6 +118,8 @@ plot(accuracy)
 # linear svm, otherwise radial SVM is good
 set.seed(12345)
 svmRTuned <- train(trainAbsorption, trainFat, method="svmRadial",
+                   tuneLength = 14,
+                   trControl = ctrl)
 # 
 
 
