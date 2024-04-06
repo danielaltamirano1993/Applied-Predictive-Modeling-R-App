@@ -95,7 +95,9 @@ permeabilitysvmRTuned <- train(trainFingerprints, trainPermeability,
                                method="svmRadial",
                                tuneLength = 14,
                                preProc = c("center", "scale"),
+                               trControl = ctrl)
 # 
+prediction<-predict(permeabilitysvmRTuned,testFingerprints)
 
 
 
