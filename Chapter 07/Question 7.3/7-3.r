@@ -108,6 +108,7 @@ marsTuned <- train(trainAbsorption, trainFat, method="earth",
                    tuneGrid = marsGrid,
                    trControl = ctrl)
 
+prediction<-predict(marsTuned,testAbsorption)
 # 
 
 
