@@ -108,4 +108,6 @@ plot(accuracy)
 permeabilityknnDescr <- trainFingerprints[ ,-nearZeroVar(trainFingerprints)]
 set.seed(12345)
 permeabilityknnTuned <- train(permeabilityknnDescr,trainPermeability,
+                 method="knn",
+                 preProc = c("center","scale"),
 
