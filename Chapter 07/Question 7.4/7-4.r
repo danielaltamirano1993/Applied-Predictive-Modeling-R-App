@@ -73,6 +73,7 @@ set.seed(12345)
 marsFit <- earth(trainFingerprints,trainPermeability)
 summary(marsFit)
 
+set.seed(12345)
                    trControl = ctrl)
 # 
 
