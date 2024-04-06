@@ -76,6 +76,8 @@ summary(marsFit)
 set.seed(12345)
 permeabilitymarsGrid <- expand.grid(degree = 1:2,nprune = 2:13)
 permeabilitymarsTuned <- train(trainFingerprints, trainPermeability,
+                   method="earth",
+                   tuneGrid = permeabilitymarsGrid,
                    trControl = ctrl)
 # 
 
