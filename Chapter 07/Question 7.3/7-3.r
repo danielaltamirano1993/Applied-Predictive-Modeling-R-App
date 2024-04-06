@@ -132,3 +132,7 @@ plot(accuracy)
 # # And, do the centering and scaling 
 knnDescr <- trainAbsorption[ ,-nearZeroVar(trainAbsorption)]
 set.seed(12345)
+knnTune <- train(trainAbsorption,trainFat,
+                 method="knn",
+# 
+
