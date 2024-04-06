@@ -60,6 +60,7 @@ nnetTune <- train(trainXnnet, trainFat,
                   linout = TRUE,
                   trace = FALSE,
                   MaxNWts = 10 * (ncol(trainXnnet) + 1) + 10 + 1,
+                  maxit = 500)
 
 
 
