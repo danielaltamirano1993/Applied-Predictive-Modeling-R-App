@@ -82,6 +82,8 @@ permeabilitymarsTuned <- train(trainFingerprints, trainPermeability,
 # 
 
 prediction<-predict(permeabilitymarsTuned,testFingerprints)
+defaultSummary(accuracy)
+plot(accuracy)
 
 #
 
