@@ -109,6 +109,7 @@ marsTuned <- train(trainAbsorption, trainFat, method="earth",
                    trControl = ctrl)
 
 prediction<-predict(marsTuned,testAbsorption)
+accuracy<-data.frame(obs=testFat,pred=prediction[,1])
 # 
 
 
