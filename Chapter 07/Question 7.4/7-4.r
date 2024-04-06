@@ -22,6 +22,7 @@ cat("\n\n")
 
 set.seed(12345)
 trainingRows =  createDataPartition(permeability, p = .75, list= FALSE)
+trainFingerprints <- noNZVfingerprints[trainingRows,]
 
 
 
