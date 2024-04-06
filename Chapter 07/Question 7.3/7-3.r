@@ -138,4 +138,5 @@ knnTune <- train(trainAbsorption,trainFat,
                  tuneGrid = data.frame(k=1:20),
                  trControl = ctrl)
 # 
+prediction<-predict(knnTune,testAbsorption)
 
