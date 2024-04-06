@@ -18,6 +18,7 @@ noNZVfingerprints <- fingerprints[,-NZVfingerprints]
 print(str(noNZVfingerprints))
 cat("\n\n")
 
+# stratified random sample splitting with 75% training and 25% testing
 
 
 
