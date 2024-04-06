@@ -100,6 +100,8 @@ permeabilitysvmRTuned <- train(trainFingerprints, trainPermeability,
 prediction<-predict(permeabilitysvmRTuned,testFingerprints)
 accuracy<-data.frame(obs=testPermeability,pred=prediction)
 defaultSummary(accuracy)
+plot(accuracy)
 
 
+# # For KNN, remove the near-zero-variance predictors 
 
