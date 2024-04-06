@@ -64,8 +64,7 @@ nnetTune <- train(trainXnnet, trainFat,
 
 prediction<-predict(nnetTune,testXnnet)
 accuracy<-data.frame(obs=testPermeability,pred=prediction)
-
-
+defaultSummary(accuracy)
 
 
 
