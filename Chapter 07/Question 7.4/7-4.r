@@ -98,6 +98,8 @@ permeabilitysvmRTuned <- train(trainFingerprints, trainPermeability,
                                trControl = ctrl)
 # 
 prediction<-predict(permeabilitysvmRTuned,testFingerprints)
+accuracy<-data.frame(obs=testPermeability,pred=prediction)
+defaultSummary(accuracy)
 
 
 
