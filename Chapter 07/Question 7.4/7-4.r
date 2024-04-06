@@ -9,6 +9,7 @@ library(pls)
 library(doParallel)
 library(nnet)
 
+data(permeability)
 
 
 
