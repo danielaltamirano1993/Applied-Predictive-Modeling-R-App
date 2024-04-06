@@ -140,4 +140,5 @@ knnTune <- train(trainAbsorption,trainFat,
 # 
 prediction<-predict(knnTune,testAbsorption)
 accuracy<-data.frame(obs=testFat,pred=prediction)
+defaultSummary(accuracy)
 
