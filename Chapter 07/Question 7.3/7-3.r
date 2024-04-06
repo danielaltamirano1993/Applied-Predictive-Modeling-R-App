@@ -135,6 +135,7 @@ set.seed(12345)
 knnTune <- train(trainAbsorption,trainFat,
                  method="knn",
                  preProc = c("center","scale"),
+                 tuneGrid = data.frame(k=1:20),
                  trControl = ctrl)
 # 
 
