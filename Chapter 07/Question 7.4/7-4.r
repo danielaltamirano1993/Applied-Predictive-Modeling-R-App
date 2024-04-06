@@ -93,6 +93,8 @@ plot(accuracy)
 set.seed(12345)
 permeabilitysvmRTuned <- train(trainFingerprints, trainPermeability,
                                method="svmRadial",
+                               tuneLength = 14,
+                               preProc = c("center", "scale"),
 # 
 
 
