@@ -33,3 +33,7 @@ trainingRows =  createDataPartition(injury, p = .75, list= FALSE)
 
 trainBio <- filteredCorBio[ trainingRows, ]
 testBio <- filteredCorBio[-trainingRows, ]
+
+
+trainInjury <- injury[trainingRows]
+testInjury <- injury[-trainingRows]
