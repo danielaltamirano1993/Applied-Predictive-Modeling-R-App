@@ -114,5 +114,6 @@ permeabilityknnTuned <- train(permeabilityknnDescr,trainPermeability,
                  trControl = ctrl)
 
 prediction<-predict(permeabilityknnTuned,testFingerprints)
+accuracy<-data.frame(obs=testPermeability,pred=prediction)
 defaultSummary(accuracy)
 plot(accuracy)
