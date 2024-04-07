@@ -108,3 +108,6 @@ glmnTunedLRBio <- train(x=trainBio,
                       metric = "Accuracy",
                       trControl = ctrl)
 
+predictionGlmnetBio <-  predict(glmnTunedLRBio,testBio)
+confusionMatrix(data =predictionGlmnetBio,
+                reference = testInjury)
