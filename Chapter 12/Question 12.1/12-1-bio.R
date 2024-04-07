@@ -6,3 +6,5 @@ data(hepatic)
 
 
 library(MASS)
+set.seed(975)
+
