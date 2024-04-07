@@ -37,6 +37,7 @@ ctrl <- trainControl(method = "repeatedcv", repeats=5, number = 4)
 tooHigh <- findCorrelation(cor(trainFingerprints), cutoff = .75)
 # 
 # #  the tooHigh gives 99 correlated datas
+trainXnnet = trainFingerprints[,-tooHigh]
 # 
 # set.seed(12344)
 
