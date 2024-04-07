@@ -114,3 +114,6 @@ confusionMatrix(data =predictionGlmnetBio,
 
 
 ########### Penalized Models for LDA ###########
+library(sparseLDA)
+set.seed(975)
+sparseLdaModelBio <- sda(x=trainBio,
