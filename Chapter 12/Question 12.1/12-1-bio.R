@@ -18,3 +18,6 @@ barplot(table(injury),col=c("yellow","red","green"), main="Class Distribution")
 #this gives Z114 predictor has zero-variance
 nearZeroVar(bio)
 
+#remove the Z114 predictor and then find the correlation between the predictors
+noZVbio <- bio[,-114]
+
