@@ -12,3 +12,6 @@ barplot(table(injury),col=c("yellow","red","green"), main="Class Distribution")
 
 #------------------------------------------------------------------------
 # Use the biological predictors:
+#------------------------------------------------------------------------
+
+
