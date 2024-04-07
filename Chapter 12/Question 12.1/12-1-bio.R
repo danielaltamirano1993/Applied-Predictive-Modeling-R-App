@@ -123,3 +123,10 @@ sparseLdaModelBio <- sda(x=trainBio,
 ## the ridge parameter called lambda.
 
 predictionSparseLDABio <-  predict(sparseLdaModelBio,testBio)
+confusionMatrix(data =predictionSparseLDABio$class,
+                reference = testInjury)
+
+
+
+#######################################################
+########### Nearest Shrunken Centroids ###########
