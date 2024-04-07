@@ -87,3 +87,6 @@ plsBio <- train(x = trainBio,
                 # preProc = c("center","scale"),
                 metric = "Accuracy",
                 trControl = ctrl)
+
+predictionPLSBio <-predict(plsBio,testBio)
+confusionMatrix(data =predictionPLSBio,
