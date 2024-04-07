@@ -67,3 +67,6 @@ set.seed(975)
 
 
 ldaBio <- train(x = trainBio,
+                y = trainInjury,
+                method = "lda",
+                metric = "Accuracy",
