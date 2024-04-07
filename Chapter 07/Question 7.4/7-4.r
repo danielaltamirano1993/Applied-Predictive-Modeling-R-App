@@ -110,4 +110,5 @@ set.seed(12345)
 permeabilityknnTuned <- train(permeabilityknnDescr,trainPermeability,
                  method="knn",
                  preProc = c("center","scale"),
+                 tuneGrid = data.frame(k=1:20),
 
