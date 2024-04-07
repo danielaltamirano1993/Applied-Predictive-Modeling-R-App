@@ -28,6 +28,7 @@ trainPermeability <- permeability[trainingRows,]
 testFingerprints <- noNZVfingerprints[-trainingRows,]
 testPermeability <- permeability[-trainingRows,]
 
+set.seed(12345)
 
 
 
