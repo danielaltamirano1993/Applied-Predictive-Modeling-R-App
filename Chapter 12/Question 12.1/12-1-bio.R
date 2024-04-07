@@ -117,3 +117,6 @@ confusionMatrix(data =predictionGlmnetBio,
 library(sparseLDA)
 set.seed(975)
 sparseLdaModelBio <- sda(x=trainBio,
+                          y =trainInjury,
+                          lambda = 0.01,
+                          stop = -146)
