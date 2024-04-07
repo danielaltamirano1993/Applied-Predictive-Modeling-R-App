@@ -62,3 +62,8 @@ confusionMatrix(data =predictionLRBio,
 ############ Linear Discriminant Analysis #############
 
 # LDA Analysis
+library(MASS)
+set.seed(975)
+
+
+ldaBio <- train(x = trainBio,
