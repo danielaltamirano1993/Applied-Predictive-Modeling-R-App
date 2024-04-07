@@ -40,6 +40,9 @@ tooHigh <- findCorrelation(cor(trainFingerprints), cutoff = .75)
 # 
 # set.seed(12344)
 
+                        .bag = FALSE)
+
+
 
 
 
