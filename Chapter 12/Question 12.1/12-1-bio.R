@@ -90,3 +90,6 @@ plsBio <- train(x = trainBio,
 
 predictionPLSBio <-predict(plsBio,testBio)
 confusionMatrix(data =predictionPLSBio,
+                reference = testInjury)
+
+#######################################################
