@@ -40,3 +40,7 @@ testInjury <- injury[-trainingRows]
 
 
 ctrl <- trainControl(summaryFunction = defaultSummary)
+
+############ Logistic Regression Analysis #############
+# logistic regression
+
