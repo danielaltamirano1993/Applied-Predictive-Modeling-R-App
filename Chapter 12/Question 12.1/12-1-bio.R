@@ -55,3 +55,6 @@ lrBio <- train(x=trainBio,
 
 predictionLRBio<-predict(lrBio,testBio)
 
+confusionMatrix(data =predictionLRBio,
+                reference = testInjury)
+
