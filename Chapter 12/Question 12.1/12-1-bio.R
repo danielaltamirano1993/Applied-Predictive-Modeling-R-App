@@ -58,3 +58,7 @@ predictionLRBio<-predict(lrBio,testBio)
 confusionMatrix(data =predictionLRBio,
                 reference = testInjury)
 
+#######################################################
+############ Linear Discriminant Analysis #############
+
+# LDA Analysis
