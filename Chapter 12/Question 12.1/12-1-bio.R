@@ -81,3 +81,6 @@ confusionMatrix(data =predictionLDABio,
 library(MASS)
 set.seed(975)
 plsBio <- train(x = trainBio,
+                y = trainInjury,
+                method = "pls",
+                tuneGrid = expand.grid(.ncomp = 1:1),
