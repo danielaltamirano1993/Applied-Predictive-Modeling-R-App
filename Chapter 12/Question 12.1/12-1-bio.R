@@ -48,5 +48,8 @@ library(caret)
 set.seed(975)
 lrBio <- train(x=trainBio,
                y = trainInjury,
+               method = "multinom",
+               metric = "Accuracy",
+               trControl = ctrl)
 
 
