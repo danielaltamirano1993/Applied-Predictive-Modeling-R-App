@@ -102,3 +102,6 @@ set.seed(975)
 
 glmnTunedLRBio <- train(x=trainBio,
                       y =trainInjury,
+                      method = "glmnet",
+                      tuneGrid = glmnGrid,
+                      # preProc = c("center", "scale"),
