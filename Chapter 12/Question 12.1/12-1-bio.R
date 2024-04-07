@@ -96,3 +96,6 @@ confusionMatrix(data =predictionPLSBio,
 ########### Penalized Models ###########
 
 ########### Penalized Models for Logistic Regression ###########
+glmnGrid <- expand.grid(.alpha = c(0, .1, .2, .4),
+                        .lambda = seq(.01, .2, length = 10))
+set.seed(975)
