@@ -93,3 +93,6 @@ confusionMatrix(data =predictionPLSBio,
                 reference = testInjury)
 
 #######################################################
+########### Penalized Models ###########
+
+########### Penalized Models for Logistic Regression ###########
