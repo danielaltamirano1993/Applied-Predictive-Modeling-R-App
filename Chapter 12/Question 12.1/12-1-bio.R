@@ -72,5 +72,8 @@ ldaBio <- train(x = trainBio,
                 metric = "Accuracy",
                 trControl = ctrl)
 
+predictionLDABio <- predict(ldaBio,testBio)
+confusionMatrix(data =predictionLDABio,
+                reference = testInjury)
 ##########################################################################
 
