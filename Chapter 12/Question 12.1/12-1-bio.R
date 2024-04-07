@@ -44,3 +44,7 @@ ctrl <- trainControl(summaryFunction = defaultSummary)
 ############ Logistic Regression Analysis #############
 # logistic regression
 
+library(caret)
+set.seed(975)
+
+
