@@ -30,6 +30,7 @@ testPermeability <- permeability[-trainingRows,]
 
 set.seed(12345)
 
+ctrl <- trainControl(method = "repeatedcv", repeats=5, number = 4)
 
 
 # 
