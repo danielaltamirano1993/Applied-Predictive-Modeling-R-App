@@ -15,3 +15,6 @@ barplot(table(injury),col=c("yellow","red","green"), main="Class Distribution")
 #------------------------------------------------------------------------
 
 
+#this gives Z114 predictor has zero-variance
+nearZeroVar(bio)
+
