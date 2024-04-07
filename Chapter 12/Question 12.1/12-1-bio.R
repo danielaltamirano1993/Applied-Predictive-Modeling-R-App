@@ -105,3 +105,6 @@ glmnTunedLRBio <- train(x=trainBio,
                       method = "glmnet",
                       tuneGrid = glmnGrid,
                       # preProc = c("center", "scale"),
+                      metric = "Accuracy",
+                      trControl = ctrl)
+
