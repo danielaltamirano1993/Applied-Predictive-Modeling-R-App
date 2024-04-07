@@ -31,3 +31,5 @@ filteredCorBio <- noZVbio[,-highCorBio]
 set.seed(975)
 trainingRows =  createDataPartition(injury, p = .75, list= FALSE)
 
+trainBio <- filteredCorBio[ trainingRows, ]
+testBio <- filteredCorBio[-trainingRows, ]
