@@ -37,3 +37,6 @@ testBio <- filteredCorBio[-trainingRows, ]
 
 trainInjury <- injury[trainingRows]
 testInjury <- injury[-trainingRows]
+
+
+ctrl <- trainControl(summaryFunction = defaultSummary)
