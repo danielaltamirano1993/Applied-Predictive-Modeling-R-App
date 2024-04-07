@@ -120,3 +120,6 @@ sparseLdaModelBio <- sda(x=trainBio,
                           y =trainInjury,
                           lambda = 0.01,
                           stop = -146)
+## the ridge parameter called lambda.
+
+predictionSparseLDABio <-  predict(sparseLdaModelBio,testBio)
