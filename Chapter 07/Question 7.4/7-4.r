@@ -38,6 +38,8 @@ tooHigh <- findCorrelation(cor(trainFingerprints), cutoff = .75)
 # 
 # #  the tooHigh gives 99 correlated datas
 # 
+# set.seed(12344)
+
 
 
 
