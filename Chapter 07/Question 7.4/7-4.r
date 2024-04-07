@@ -111,4 +111,5 @@ permeabilityknnTuned <- train(permeabilityknnDescr,trainPermeability,
                  method="knn",
                  preProc = c("center","scale"),
                  tuneGrid = data.frame(k=1:20),
+                 trControl = ctrl)
 
