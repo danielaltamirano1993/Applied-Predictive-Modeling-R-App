@@ -34,6 +34,7 @@ ctrl <- trainControl(method = "repeatedcv", repeats=5, number = 4)
 
 
 # # For neuralnetwork, find the correlation and delete the correlated data
+tooHigh <- findCorrelation(cor(trainFingerprints), cutoff = .75)
 # 
 
 
