@@ -113,3 +113,5 @@ permeabilityknnTuned <- train(permeabilityknnDescr,trainPermeability,
                  tuneGrid = data.frame(k=1:20),
                  trControl = ctrl)
 
+defaultSummary(accuracy)
+plot(accuracy)
