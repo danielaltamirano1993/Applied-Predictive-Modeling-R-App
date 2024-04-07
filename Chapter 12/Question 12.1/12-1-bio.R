@@ -53,3 +53,5 @@ lrBio <- train(x=trainBio,
                trControl = ctrl)
 
 
+predictionLRBio<-predict(lrBio,testBio)
+
