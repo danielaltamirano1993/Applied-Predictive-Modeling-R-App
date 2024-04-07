@@ -130,5 +130,8 @@ confusionMatrix(data =predictionSparseLDABio$class,
 
 #######################################################
 ########### Nearest Shrunken Centroids ###########
+
 library(pamr)
 nscGridBio <- data.frame(.threshold = seq(0,4, by=0.1))
+set.seed(476)
+
