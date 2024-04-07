@@ -28,3 +28,6 @@ filteredCorBio <- noZVbio[,-highCorBio]
 
 
 # splitting data into 75% and 25% based on injury response
+set.seed(975)
+trainingRows =  createDataPartition(injury, p = .75, list= FALSE)
+
