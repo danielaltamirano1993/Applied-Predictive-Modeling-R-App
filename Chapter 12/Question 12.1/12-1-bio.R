@@ -111,3 +111,6 @@ glmnTunedLRBio <- train(x=trainBio,
 predictionGlmnetBio <-  predict(glmnTunedLRBio,testBio)
 confusionMatrix(data =predictionGlmnetBio,
                 reference = testInjury)
+
+
+########### Penalized Models for LDA ###########
