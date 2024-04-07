@@ -77,3 +77,7 @@ confusionMatrix(data =predictionLDABio,
                 reference = testInjury)
 ##########################################################################
 
+############## Partial Least Squares Discriminant Analysis ###############
+library(MASS)
+set.seed(975)
+plsBio <- train(x = trainBio,
