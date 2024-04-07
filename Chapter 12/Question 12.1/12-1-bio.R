@@ -134,4 +134,7 @@ confusionMatrix(data =predictionSparseLDABio$class,
 library(pamr)
 nscGridBio <- data.frame(.threshold = seq(0,4, by=0.1))
 set.seed(476)
+nscTunedBio <- train(x = trainBio, 
+                     y = trainInjury,
+                     method = "pam",
 
