@@ -67,7 +67,8 @@ confusionMatrix(data =predictionLRChem,
 library(MASS)
 set.seed(975)
 
-
+ldaChem <- train(x = trainChem,
+                y = trainInjury,
 ##########################################################################
 
 
