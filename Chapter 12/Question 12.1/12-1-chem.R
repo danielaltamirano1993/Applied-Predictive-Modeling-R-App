@@ -8,6 +8,7 @@ data(hepatic)
 library(MASS)
 set.seed(975)
 
+barplot(table(injury),col=c("yellow","red","green"), main="Class Distribution")
 
 
 
