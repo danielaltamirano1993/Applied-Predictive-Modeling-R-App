@@ -69,6 +69,8 @@ set.seed(975)
 
 ldaChem <- train(x = trainChem,
                 y = trainInjury,
+                method = "lda",
+                preProc = c("center","scale"),
 ##########################################################################
 
 
