@@ -142,3 +142,4 @@ nscTunedBio <- train(x = trainBio,
                      metric = "Accuracy",
                      trControl = ctrl)
 
+predictionNSCBio <-predict(nscTunedBio,testBio)
