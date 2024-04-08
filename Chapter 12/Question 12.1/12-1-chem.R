@@ -57,7 +57,11 @@ lrChem <- train(x=trainChem,
 
 predictionLRChem<-predict(lrChem,testChem)
 
+confusionMatrix(data =predictionLRChem,
+                reference = testInjury)
 
 #######################################################
 ############ Linear Discriminant Analysis #############
+
+# LDA Analysis
 
