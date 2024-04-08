@@ -55,4 +55,9 @@ lrChem <- train(x=trainChem,
                trControl = ctrl)
 
 
+predictionLRChem<-predict(lrChem,testChem)
+
+
+#######################################################
+############ Linear Discriminant Analysis #############
 
