@@ -144,3 +144,4 @@ nscTunedBio <- train(x = trainBio,
 
 predictionNSCBio <-predict(nscTunedBio,testBio)
 confusionMatrix(data =predictionNSCBio,
+                reference = testInjury)
