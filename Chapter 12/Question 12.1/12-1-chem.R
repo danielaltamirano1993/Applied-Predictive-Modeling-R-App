@@ -64,4 +64,8 @@ confusionMatrix(data =predictionLRChem,
 ############ Linear Discriminant Analysis #############
 
 # LDA Analysis
+library(MASS)
+
+
+
 
