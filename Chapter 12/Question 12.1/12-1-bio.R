@@ -139,4 +139,6 @@ nscTunedBio <- train(x = trainBio,
                      method = "pam",
                      # preProc = c("center", "scale"),
                      tuneGrid = nscGridBio,
+                     metric = "Accuracy",
+                     trControl = ctrl)
 
