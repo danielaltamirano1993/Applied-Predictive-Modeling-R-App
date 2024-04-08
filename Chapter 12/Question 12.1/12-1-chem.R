@@ -71,6 +71,9 @@ ldaChem <- train(x = trainChem,
                 y = trainInjury,
                 method = "lda",
                 preProc = c("center","scale"),
+                metric = "Accuracy",
+                trControl = ctrl)
+
 ##########################################################################
 
 
