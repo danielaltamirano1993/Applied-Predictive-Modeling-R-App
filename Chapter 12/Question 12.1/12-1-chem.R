@@ -65,7 +65,10 @@ confusionMatrix(data =predictionLRChem,
 
 # LDA Analysis
 library(MASS)
+set.seed(975)
 
+
+##########################################################################
 
 
 
