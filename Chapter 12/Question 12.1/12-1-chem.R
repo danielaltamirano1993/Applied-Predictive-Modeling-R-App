@@ -51,3 +51,8 @@ set.seed(975)
 lrChem <- train(x=trainChem,
                y = trainInjury,
                method = "multinom",
+               metric = "Accuracy",
+               trControl = ctrl)
+
+
+
