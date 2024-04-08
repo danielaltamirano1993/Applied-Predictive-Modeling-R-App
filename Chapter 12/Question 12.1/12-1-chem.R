@@ -24,3 +24,6 @@ zv_cols = nearZeroVar(chem)
 noZVChem = chem[,-zv_cols]
 
 
+#remove the correlation between the predictors
+highCorChem<-findCorrelation(cor(noZVChem),cutoff = .75)
+filteredCorChem <- noZVChem[,-highCorChem]
