@@ -48,3 +48,6 @@ ctrl <- trainControl(summaryFunction = defaultSummary)
 
 library(caret)
 set.seed(975)
+lrChem <- train(x=trainChem,
+               y = trainInjury,
+               method = "multinom",
