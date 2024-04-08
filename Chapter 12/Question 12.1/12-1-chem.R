@@ -11,5 +11,10 @@ set.seed(975)
 barplot(table(injury),col=c("yellow","red","green"), main="Class Distribution")
 
 
+set.seed(975)
+
+#------------------------------------------------------------------------
+# Use the Chemical predictors:
+#------------------------------------------------------------------------
 
 
