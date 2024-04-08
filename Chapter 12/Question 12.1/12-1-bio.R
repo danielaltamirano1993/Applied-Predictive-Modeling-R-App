@@ -143,3 +143,4 @@ nscTunedBio <- train(x = trainBio,
                      trControl = ctrl)
 
 predictionNSCBio <-predict(nscTunedBio,testBio)
+confusionMatrix(data =predictionNSCBio,
