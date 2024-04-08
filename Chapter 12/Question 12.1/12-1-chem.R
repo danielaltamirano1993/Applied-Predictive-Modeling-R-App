@@ -27,3 +27,7 @@ noZVChem = chem[,-zv_cols]
 #remove the correlation between the predictors
 highCorChem<-findCorrelation(cor(noZVChem),cutoff = .75)
 filteredCorChem <- noZVChem[,-highCorChem]
+
+
+
+# splitting data into 75% and 25% based on injury response
