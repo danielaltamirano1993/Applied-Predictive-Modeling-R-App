@@ -37,3 +37,7 @@ trainingRows =  createDataPartition(injury, p = .75, list= FALSE)
 trainChem <- filteredCorChem[trainingRows,]
 testChem <- filteredCorChem[-trainingRows, ]
 
+trainInjury <- injury[trainingRows]
+testInjury <- injury[-trainingRows]
+
+
