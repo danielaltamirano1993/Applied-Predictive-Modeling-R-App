@@ -21,3 +21,6 @@ set.seed(975)
 # this gives removes near-zero variance 
 # this is a categorical predictor and should remove near zero variance for this data
 zv_cols = nearZeroVar(chem)
+noZVChem = chem[,-zv_cols]
+
+
