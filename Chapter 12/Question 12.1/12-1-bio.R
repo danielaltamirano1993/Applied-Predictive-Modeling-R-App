@@ -137,4 +137,6 @@ set.seed(476)
 nscTunedBio <- train(x = trainBio, 
                      y = trainInjury,
                      method = "pam",
+                     # preProc = c("center", "scale"),
+                     tuneGrid = nscGridBio,
 
