@@ -54,6 +54,8 @@ nnetTune <- train(trainXnnet, trainFat,
                   method = "avNNet",
                   tuneGrid = nnetGrid,
                   trControl = ctrl,
+                  ## Automatically standardize data prior to modeling
+                  ## and prediction
 
 
 
