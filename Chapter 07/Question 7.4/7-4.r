@@ -46,6 +46,7 @@ nnetGrid <- expand.grid(.decay = c(0, 0.01, .1),
                         .size = c(1:10),
                         ## The next option is to use bagging (see the
                         ## next chapter) instead of different random
+                        ## seeds.
                         .bag = FALSE)
 
 
