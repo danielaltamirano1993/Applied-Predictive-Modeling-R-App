@@ -56,6 +56,8 @@ nnetTune <- train(trainXnnet, trainFat,
                   trControl = ctrl,
                   ## Automatically standardize data prior to modeling
                   ## and prediction
+                  preProc = c("center", "scale"),
+                  linout = TRUE,
 
 
 
