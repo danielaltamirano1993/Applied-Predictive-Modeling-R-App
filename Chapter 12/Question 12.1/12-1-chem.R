@@ -74,6 +74,8 @@ ldaChem <- train(x = trainChem,
                 metric = "Accuracy",
                 trControl = ctrl)
 
+predictionLDAChem <-predict(ldaChem,testChem)
+confusionMatrix(data =predictionLDAChem,
 ##########################################################################
 
 
