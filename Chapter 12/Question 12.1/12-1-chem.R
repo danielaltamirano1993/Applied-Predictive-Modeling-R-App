@@ -76,7 +76,10 @@ ldaChem <- train(x = trainChem,
 
 predictionLDAChem <-predict(ldaChem,testChem)
 confusionMatrix(data =predictionLDAChem,
+                reference = testInjury)
 ##########################################################################
 
+############## Partial Least Squares Discriminant Analysis ###############
+library(MASS)
 
 
