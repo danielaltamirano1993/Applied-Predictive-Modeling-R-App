@@ -38,6 +38,7 @@ tooHigh <- findCorrelation(cor(trainFingerprints), cutoff = .75)
 # 
 # #  the tooHigh gives 99 correlated datas
 trainXnnet = trainFingerprints[,-tooHigh]
+testXnnet = testFingerprints[,-tooHigh]
 # 
 # set.seed(12344)
 
