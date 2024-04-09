@@ -52,6 +52,8 @@ nnetGrid <- expand.grid(.decay = c(0, 0.01, .1),
 
 nnetTune <- train(trainXnnet, trainFat,
                   method = "avNNet",
+                  tuneGrid = nnetGrid,
+                  trControl = ctrl,
 
 
 
