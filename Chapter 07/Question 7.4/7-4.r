@@ -58,6 +58,7 @@ nnetTune <- train(trainXnnet, trainFat,
                   ## and prediction
                   preProc = c("center", "scale"),
                   linout = TRUE,
+                  trace = FALSE,
 
 
 
