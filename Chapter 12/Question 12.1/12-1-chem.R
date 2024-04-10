@@ -91,5 +91,10 @@ plsChem <- train(x = trainChem,
                 trControl = ctrl)
 
 predictionPLSChem <-predict(plsChem,testChem)
+confusionMatrix(data =predictionPLSChem,
+                reference = testInjury)
+
+#######################################################
+########### Penalized Models ###########
 
 
