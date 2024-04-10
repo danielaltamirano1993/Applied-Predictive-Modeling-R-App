@@ -87,5 +87,9 @@ plsChem <- train(x = trainChem,
                 method = "pls",
                 tuneGrid = expand.grid(.ncomp = 1:1),
                 preProc = c("center","scale"),
+                metric = "Accuracy",
+                trControl = ctrl)
+
+predictionPLSChem <-predict(plsChem,testChem)
 
 
