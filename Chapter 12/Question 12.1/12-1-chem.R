@@ -85,5 +85,7 @@ set.seed(975)
 plsChem <- train(x = trainChem,
                 y = trainInjury,
                 method = "pls",
+                tuneGrid = expand.grid(.ncomp = 1:1),
+                preProc = c("center","scale"),
 
 
