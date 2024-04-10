@@ -97,4 +97,6 @@ confusionMatrix(data =predictionPLSChem,
 #######################################################
 ########### Penalized Models ###########
 
+########### Penalized Models for Logistic Regression ###########
+
 
