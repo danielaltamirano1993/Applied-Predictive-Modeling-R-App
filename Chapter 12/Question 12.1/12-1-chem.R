@@ -81,5 +81,7 @@ confusionMatrix(data =predictionLDAChem,
 
 ############## Partial Least Squares Discriminant Analysis ###############
 library(MASS)
+set.seed(975)
+plsChem <- train(x = trainChem,
 
 
