@@ -126,3 +126,8 @@ sparseLdaModelChem <- sda(x=trainChem,
 
 predictionSparseLDAChem <-  predict(sparseLdaModelChem,testChem)
 confusionMatrix(data = predictionSparseLDAChem$class,
+                reference = testInjury)
+
+#######################################################
+########### Nearest Shrunken Centroids ###########
+
