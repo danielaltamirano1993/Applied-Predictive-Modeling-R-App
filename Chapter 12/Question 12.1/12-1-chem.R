@@ -118,3 +118,7 @@ confusionMatrix(data =predictionGlmnetChem,
 ########### Penalized Models for LDA ###########
 library(sparseLDA)
 set.seed(975)
+sparseLdaModelChem <- sda(x=trainChem,
+                      y =trainInjury,
+                      lambda = 0.01,
+                      stop = -73)
