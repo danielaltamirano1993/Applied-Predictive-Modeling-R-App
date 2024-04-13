@@ -107,6 +107,10 @@ glmnTunedChem <- train(x=trainChem,
                       method = "glmnet",
                       tuneGrid = glmnGrid,
                       preProc = c("center", "scale"),
+                      metric = "Accuracy",
+                      trControl = ctrl)
 
 predictionGlmnetChem <-  predict(glmnTunedChem,testChem)
+confusionMatrix(data =predictionGlmnetChem,
+                reference = testInjury)
 
