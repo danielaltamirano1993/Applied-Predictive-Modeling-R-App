@@ -122,3 +122,7 @@ sparseLdaModelChem <- sda(x=trainChem,
                       y =trainInjury,
                       lambda = 0.01,
                       stop = -73)
+## the ridge parameter called lambda.
+
+predictionSparseLDAChem <-  predict(sparseLdaModelChem,testChem)
+confusionMatrix(data = predictionSparseLDAChem$class,
