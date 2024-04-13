@@ -131,3 +131,7 @@ confusionMatrix(data = predictionSparseLDAChem$class,
 #######################################################
 ########### Nearest Shrunken Centroids ###########
 
+library(pamr)
+
+nscGridChem <- data.frame(.threshold = seq(0,4, by=0.1))
+set.seed(975)
