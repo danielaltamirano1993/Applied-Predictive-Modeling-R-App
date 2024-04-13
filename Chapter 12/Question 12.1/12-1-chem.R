@@ -143,3 +143,7 @@ nscTunedChem <- train(x = trainChem,
                      metric = "Accuracy",
                      trControl = ctrl)
 
+predictionNSCChem <-predict(nscTunedChem,testChem)
+confusionMatrix(data =predictionNSCChem,
+                reference = testInjury)
+
