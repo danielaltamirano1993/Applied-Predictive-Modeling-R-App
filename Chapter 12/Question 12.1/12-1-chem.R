@@ -139,3 +139,7 @@ nscTunedChem <- train(x = trainChem,
                      y = trainInjury,
                      method = "pam",
                      preProc = c("center", "scale"),
+                     tuneGrid = nscGridBio,
+                     metric = "Accuracy",
+                     trControl = ctrl)
+
