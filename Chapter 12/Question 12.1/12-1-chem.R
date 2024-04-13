@@ -135,3 +135,7 @@ library(pamr)
 
 nscGridChem <- data.frame(.threshold = seq(0,4, by=0.1))
 set.seed(975)
+nscTunedChem <- train(x = trainChem, 
+                     y = trainInjury,
+                     method = "pam",
+                     preProc = c("center", "scale"),
