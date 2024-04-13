@@ -114,3 +114,7 @@ predictionGlmnetChem <-  predict(glmnTunedChem,testChem)
 confusionMatrix(data =predictionGlmnetChem,
                 reference = testInjury)
 
+
+########### Penalized Models for LDA ###########
+library(sparseLDA)
+set.seed(975)
