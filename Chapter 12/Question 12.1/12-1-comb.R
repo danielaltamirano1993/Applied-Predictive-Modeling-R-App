@@ -35,4 +35,10 @@ mergedPredictor <-data.frame(filteredCorBio,filteredCorChem)
 set.seed(975)
 trainingRows =  createDataPartition(injury, p = .75, list= FALSE)
 
+trainmergedPredictor <- mergedPredictor[trainingRows,]
+testmergedPredictor <- mergedPredictor[-trainingRows, ]
+
+trainInjury <- injury[trainingRows]
+testInjury <- injury[-trainingRows]
+
 
