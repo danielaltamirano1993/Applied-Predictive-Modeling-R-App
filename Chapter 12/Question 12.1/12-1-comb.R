@@ -29,5 +29,10 @@ noZVChem = chem[,-zv_cols]
 highCorChem<-findCorrelation(cor(noZVChem),cutoff = .75)
 filteredCorChem <- noZVChem[,-highCorChem]
 
+mergedPredictor <-data.frame(filteredCorBio,filteredCorChem)
+
+# splitting data into 75% and 25% based on injury response
+set.seed(975)
+trainingRows =  createDataPartition(injury, p = .75, list= FALSE)
 
 
