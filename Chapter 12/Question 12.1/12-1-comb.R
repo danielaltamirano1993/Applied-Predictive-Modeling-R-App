@@ -53,3 +53,8 @@ lrmergedPredictor <- train(x=trainmergedPredictor,
                 y = trainInjury,
                 method = "multinom",
                 metric = "Accuracy",
+                trControl = ctrl)
+
+
+predictionLRmergedPredictor<-predict(lrmergedPredictor,testmergedPredictor)
+
