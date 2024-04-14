@@ -14,6 +14,11 @@ nearZeroVar(bio)
 #remove the Z114 predictor and then find the correlation between the predictors
 noZVbio <- bio[,-114]
 
+#remove the correlation between the predictors
+highCorBio<-findCorrelation(cor(noZVbio),cutoff = .75)
+filteredCorBio <- noZVbio[,-highCorBio]
+
+
 
 
 
