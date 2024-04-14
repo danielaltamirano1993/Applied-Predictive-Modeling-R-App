@@ -47,3 +47,9 @@ ctrl <- trainControl(summaryFunction = defaultSummary)
 ############ Logistic Regression Analysis #############
 # logistic regression
 
+library(caret)
+set.seed(975)
+lrmergedPredictor <- train(x=trainmergedPredictor,
+                y = trainInjury,
+                method = "multinom",
+                metric = "Accuracy",
