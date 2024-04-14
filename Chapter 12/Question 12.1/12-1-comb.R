@@ -58,3 +58,8 @@ lrmergedPredictor <- train(x=trainmergedPredictor,
 
 predictionLRmergedPredictor<-predict(lrmergedPredictor,testmergedPredictor)
 
+confusionMatrix(data =predictionLRmergedPredictor,
+                reference = testInjury)
+
+#######################################################
+############ Linear Discriminant Analysis #############
