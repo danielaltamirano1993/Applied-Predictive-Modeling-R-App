@@ -63,3 +63,7 @@ confusionMatrix(data =predictionLRmergedPredictor,
 
 #######################################################
 ############ Linear Discriminant Analysis #############
+
+# LDA Analysis
+library(MASS)
+set.seed(975)
