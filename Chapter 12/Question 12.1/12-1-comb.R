@@ -81,3 +81,13 @@ confusionMatrix(data =predictionLDAmergedPredictor,
 ##########################################################################
 
 ############## Partial Least Squares Discriminant Analysis ###############
+library(MASS)
+set.seed(975)
+plsmergedPredictor <- train(x = trainmergedPredictor,
+                 y = trainInjury,
+                 method = "pls",
+                 tuneGrid = expand.grid(.ncomp = 1:4),
+                 # preProc = c("center","scale"),
+                 metric = "Accuracy",
+                 trControl = ctrl)
+
