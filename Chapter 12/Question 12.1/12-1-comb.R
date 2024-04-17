@@ -130,3 +130,7 @@ confusionMatrix(data = predictionSparseLDAmergedPredictor$class,
                 reference = testInjury)
 
 #######################################################
+########### Nearest Shrunken Centroids ###########
+
+library(pamr)
+
