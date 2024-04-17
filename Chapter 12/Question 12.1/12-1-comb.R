@@ -91,3 +91,4 @@ plsmergedPredictor <- train(x = trainmergedPredictor,
                  metric = "Accuracy",
                  trControl = ctrl)
 
+predictionPLSmergedPredictor <-predict(plsmergedPredictor,testmergedPredictor)
