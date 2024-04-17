@@ -134,3 +134,6 @@ confusionMatrix(data = predictionSparseLDAmergedPredictor$class,
 
 library(pamr)
 
+nscGridmergedPredictor <- data.frame(.threshold = seq(0,4, by=0.1))
+set.seed(975)
+nscTunedmergedPredictor <- train(x = trainmergedPredictor, 
