@@ -67,3 +67,11 @@ confusionMatrix(data =predictionLRmergedPredictor,
 # LDA Analysis
 library(MASS)
 set.seed(975)
+
+ldamergedPredictor <- train(x = trainmergedPredictor,
+                 y = trainInjury,
+                 method = "lda",
+                 # preProc = c("center","scale"),
+                 metric = "Accuracy",
+                 trControl = ctrl)
+
