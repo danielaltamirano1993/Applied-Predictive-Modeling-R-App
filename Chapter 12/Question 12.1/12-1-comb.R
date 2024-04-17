@@ -94,3 +94,10 @@ plsmergedPredictor <- train(x = trainmergedPredictor,
 predictionPLSmergedPredictor <-predict(plsmergedPredictor,testmergedPredictor)
 confusionMatrix(data =predictionPLSmergedPredictor,
                 reference = testInjury)
+
+#######################################################
+########### Penalized Models ###########
+
+########### Penalized Models for Logistic Regression ###########
+
+glmnGrid <- expand.grid(.alpha = c(0, .1, .2, .4),
