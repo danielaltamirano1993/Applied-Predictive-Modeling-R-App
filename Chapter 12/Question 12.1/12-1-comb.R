@@ -92,3 +92,5 @@ plsmergedPredictor <- train(x = trainmergedPredictor,
                  trControl = ctrl)
 
 predictionPLSmergedPredictor <-predict(plsmergedPredictor,testmergedPredictor)
+confusionMatrix(data =predictionPLSmergedPredictor,
+                reference = testInjury)
