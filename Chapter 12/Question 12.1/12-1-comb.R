@@ -75,3 +75,9 @@ ldamergedPredictor <- train(x = trainmergedPredictor,
                  metric = "Accuracy",
                  trControl = ctrl)
 
+predictionLDAmergedPredictor <-predict(ldamergedPredictor,testmergedPredictor)
+confusionMatrix(data =predictionLDAmergedPredictor,
+                reference = testInjury)
+##########################################################################
+
+############## Partial Least Squares Discriminant Analysis ###############
