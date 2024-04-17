@@ -116,3 +116,12 @@ confusionMatrix(data =predictionGlmnetmergedPredictor,
                 reference = testInjury)
 
 
+########### Penalized Models for LDA ###########
+library(sparseLDA)
+set.seed(975)
+sparseLdaModelmergedPredictor <- sda(x=trainmergedPredictor,
+                          y =trainInjury,
+                          lambda = 0.01,
+                          stop = -73)
+## the ridge parameter called lambda.
+
