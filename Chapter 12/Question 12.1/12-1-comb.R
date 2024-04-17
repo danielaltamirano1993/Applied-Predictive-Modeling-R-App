@@ -111,3 +111,8 @@ glmnTunedmergedPredictor <- train(x=trainmergedPredictor,
                        metric = "Accuracy",
                        trControl = ctrl)
 
+predictionGlmnetmergedPredictor <-  predict(glmnTunedmergedPredictor,testmergedPredictor)
+confusionMatrix(data =predictionGlmnetmergedPredictor,
+                reference = testInjury)
+
+
