@@ -125,3 +125,8 @@ sparseLdaModelmergedPredictor <- sda(x=trainmergedPredictor,
                           stop = -73)
 ## the ridge parameter called lambda.
 
+predictionSparseLDAmergedPredictor <-  predict(sparseLdaModelmergedPredictor,testmergedPredictor)
+confusionMatrix(data = predictionSparseLDAmergedPredictor$class,
+                reference = testInjury)
+
+#######################################################
