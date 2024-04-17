@@ -104,3 +104,10 @@ glmnGrid <- expand.grid(.alpha = c(0, .1, .2, .4),
                         .lambda = seq(.01, .2, length = 10))
 set.seed(975)
 glmnTunedmergedPredictor <- train(x=trainmergedPredictor,
+                       y =trainInjury,
+                       method = "glmnet",
+                       tuneGrid = glmnGrid,
+                       # preProc = c("center", "scale"),
+                       metric = "Accuracy",
+                       trControl = ctrl)
+
