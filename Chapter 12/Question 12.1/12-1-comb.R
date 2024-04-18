@@ -139,3 +139,7 @@ set.seed(975)
 nscTunedmergedPredictor <- train(x = trainmergedPredictor, 
                       y = trainInjury,
                       method = "pam",
+                      # preProc = c("center", "scale"),
+                      tuneGrid = nscGridmergedPredictor,
+                      metric = "Accuracy",
+                      trControl = ctrl)
