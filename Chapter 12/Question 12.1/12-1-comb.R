@@ -145,6 +145,8 @@ nscTunedmergedPredictor <- train(x = trainmergedPredictor,
                       trControl = ctrl)
 
 predictionNSCmergedPredictor <-predict(nscTunedmergedPredictor,testmergedPredictor)
+confusionMatrix(data =predictionNSCmergedPredictor,
+                reference = testInjury)
 
 
 
