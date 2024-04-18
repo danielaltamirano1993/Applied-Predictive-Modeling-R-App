@@ -144,6 +144,7 @@ nscTunedmergedPredictor <- train(x = trainmergedPredictor,
                       metric = "Accuracy",
                       trControl = ctrl)
 
+predictionNSCmergedPredictor <-predict(nscTunedmergedPredictor,testmergedPredictor)
 
 
 
