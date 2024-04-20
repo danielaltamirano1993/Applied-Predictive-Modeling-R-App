@@ -6,7 +6,9 @@ data(oil)
 
 
 library(MASS)
+set.seed(975)
 
+barplot(table(oilType),col=c("yellow"), main="Class Distribution")
 
 
 
