@@ -19,6 +19,8 @@ nearZeroVar(fattyAcids,saveMetrics =TRUE)
 highCorM<-findCorrelation(cor(fattyAcids),cutoff = .75)
 filteredCorFatty <- fattyAcids[,-highCorM]
 
+# after removing the highly correlated predictor, we split the data using 
+# stratified random sampling
 
 
 
