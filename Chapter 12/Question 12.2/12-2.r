@@ -33,6 +33,7 @@ testFattyAcids <- filteredCorFatty[-trainingRows, ]
 trainOilType <- oilType[trainingRows]
 testOilType <- oilType[-trainingRows]
 
+ctrl <- trainControl(summaryFunction = defaultSummary)
 
 
 
