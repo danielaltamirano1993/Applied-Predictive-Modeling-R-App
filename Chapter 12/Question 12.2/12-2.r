@@ -30,6 +30,8 @@ trainingRows =  createDataPartition(oilType, p = .80, list= FALSE)
 trainFattyAcids <- filteredCorFatty[ trainingRows, ]
 testFattyAcids <- filteredCorFatty[-trainingRows, ]
 
+trainOilType <- oilType[trainingRows]
+testOilType <- oilType[-trainingRows]
 
 
 
