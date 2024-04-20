@@ -26,7 +26,10 @@ filteredCorFatty <- fattyAcids[,-highCorM]
 
 set.seed(975)
 trainingRows =  createDataPartition(oilType, p = .80, list= FALSE)
+
 trainFattyAcids <- filteredCorFatty[ trainingRows, ]
+testFattyAcids <- filteredCorFatty[-trainingRows, ]
+
 
 
 
