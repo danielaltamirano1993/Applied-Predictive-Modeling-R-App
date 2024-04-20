@@ -22,7 +22,11 @@ filteredCorFatty <- fattyAcids[,-highCorM]
 # after removing the highly correlated predictor, we split the data using 
 # stratified random sampling
 
+# splitting data into 80% and 20% based on oilType response
 
+set.seed(975)
+trainingRows =  createDataPartition(oilType, p = .80, list= FALSE)
+trainFattyAcids <- filteredCorFatty[ trainingRows, ]
 
 
 
