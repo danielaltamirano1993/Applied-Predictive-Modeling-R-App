@@ -72,3 +72,6 @@ confusionMatrix(data =predictionLDAFattyAcids,
 ##########################################################################
 
 ############## Partial Least Squares Discriminant Analysis ###############
+library(MASS)
+set.seed(975)
+plsFattyAcids <- train(x = trainFattyAcids,
