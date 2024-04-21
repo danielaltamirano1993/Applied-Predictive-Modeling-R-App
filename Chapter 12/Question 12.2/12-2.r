@@ -86,3 +86,6 @@ predictionPLSFattyAcids <-predict(plsFattyAcids,testFattyAcids)
 confusionMatrix(data =predictionPLSFattyAcids,
                 reference = testOilType)
 
+#######################################################
+########### Penalized Models ###########
+
