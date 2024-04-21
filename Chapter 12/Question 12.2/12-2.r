@@ -52,3 +52,7 @@ predictionLRFattyAcids<-predict(lrFattyAcids,testFattyAcids)
 confusionMatrix(data =predictionLRFattyAcids,
                 reference = testOilType)
 
+#######################################################
+############ Linear Discriminant Analysis #############
+
+# LDA Analysis
