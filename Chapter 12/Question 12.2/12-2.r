@@ -108,3 +108,11 @@ predictionGlmnetFattyAcids <-  predict(glmnTunedLRFattyAcids,testFattyAcids)
 confusionMatrix(data =predictionGlmnetFattyAcids,
                 reference = testOilType)
 
+
+########### Penalized Models for LDA ###########
+library(sparseLDA)
+set.seed(975)
+sparseLdaModelFattyAcids <- sda(x=trainFattyAcids,
+                         y =trainOilType,
+                         lambda = 0.01,
+                         stop = -7)
