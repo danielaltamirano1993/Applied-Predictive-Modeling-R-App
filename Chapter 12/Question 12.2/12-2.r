@@ -49,3 +49,6 @@ lrFattyAcids <- train(x=trainFattyAcids,
 
 predictionLRFattyAcids<-predict(lrFattyAcids,testFattyAcids)
 
+confusionMatrix(data =predictionLRFattyAcids,
+                reference = testOilType)
+
