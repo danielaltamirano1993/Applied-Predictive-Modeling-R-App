@@ -81,3 +81,8 @@ plsFattyAcids <- train(x = trainFattyAcids,
                 # preProc = c("center","scale"),
                 metric = "Accuracy",
                 trControl = ctrl)
+
+predictionPLSFattyAcids <-predict(plsFattyAcids,testFattyAcids)
+confusionMatrix(data =predictionPLSFattyAcids,
+                reference = testOilType)
+
