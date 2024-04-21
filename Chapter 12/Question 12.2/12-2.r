@@ -47,3 +47,5 @@ lrFattyAcids <- train(x=trainFattyAcids,
                trControl = ctrl)
 
 
+predictionLRFattyAcids<-predict(lrFattyAcids,testFattyAcids)
+
