@@ -60,3 +60,8 @@ library(MASS)
 set.seed(975)
 
 
+ldaFattyAcids <- train(x = trainFattyAcids,
+                y = trainOilType,
+                method = "lda",
+                metric = "Accuracy",
+                trControl = ctrl)
