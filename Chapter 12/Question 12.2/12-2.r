@@ -41,5 +41,9 @@ ctrl <- trainControl(summaryFunction = defaultSummary)
 library(caret)
 set.seed(975)
 lrFattyAcids <- train(x=trainFattyAcids,
+               y = trainOilType,
+               method = "multinom",
+               metric = "Accuracy",
+               trControl = ctrl)
 
 
