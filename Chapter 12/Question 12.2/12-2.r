@@ -116,3 +116,8 @@ sparseLdaModelFattyAcids <- sda(x=trainFattyAcids,
                          y =trainOilType,
                          lambda = 0.01,
                          stop = -7)
+## the ridge parameter called lambda.
+
+predictionSparseLDAFattyAcids <-  predict(sparseLdaModelFattyAcids,testFattyAcids)
+confusionMatrix(data =predictionSparseLDAFattyAcids$class,
+                reference = testOilType)
