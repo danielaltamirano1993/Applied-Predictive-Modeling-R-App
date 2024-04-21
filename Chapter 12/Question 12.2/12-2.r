@@ -104,3 +104,7 @@ glmnTunedLRFattyAcids<- train(x=trainFattyAcids,
                         metric = "Accuracy",
                         trControl = ctrl)
 
+predictionGlmnetFattyAcids <-  predict(glmnTunedLRFattyAcids,testFattyAcids)
+confusionMatrix(data =predictionGlmnetFattyAcids,
+                reference = testOilType)
+
