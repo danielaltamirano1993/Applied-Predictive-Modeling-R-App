@@ -56,3 +56,7 @@ confusionMatrix(data =predictionLRFattyAcids,
 ############ Linear Discriminant Analysis #############
 
 # LDA Analysis
+library(MASS)
+set.seed(975)
+
+
