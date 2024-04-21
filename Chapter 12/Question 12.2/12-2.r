@@ -96,3 +96,11 @@ glmnGrid <- expand.grid(.alpha = c(0, .1, .2, .4, .6, .8, 1),
                         .lambda = seq(.01, .2, length = 10))
 set.seed(476)
 
+glmnTunedLRFattyAcids<- train(x=trainFattyAcids,
+                        y =trainOilType,
+                        method = "glmnet",
+                        tuneGrid = glmnGrid,
+                        # preProc = c("center", "scale"),
+                        metric = "Accuracy",
+                        trControl = ctrl)
+
