@@ -65,3 +65,8 @@ ldaFattyAcids <- train(x = trainFattyAcids,
                 method = "lda",
                 metric = "Accuracy",
                 trControl = ctrl)
+
+predictionLDAFattyAcids <-predict(ldaFattyAcids,testFattyAcids)
+confusionMatrix(data =predictionLDAFattyAcids,
+                reference = testOilType)
+##########################################################################
