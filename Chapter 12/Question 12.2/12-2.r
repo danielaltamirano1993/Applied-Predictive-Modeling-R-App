@@ -127,3 +127,7 @@ confusionMatrix(data =predictionSparseLDAFattyAcids$class,
 #######################################################
 ########### Nearest Shrunken Centroids ###########
 
+library(pamr)
+nscGridFattyAcids <- data.frame(.threshold = seq(0,4, by=0.1))
+set.seed(975)
+nscTunedFattyAcids <- train(x = trainFattyAcids, 
