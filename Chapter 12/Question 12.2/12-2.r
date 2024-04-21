@@ -121,3 +121,9 @@ sparseLdaModelFattyAcids <- sda(x=trainFattyAcids,
 predictionSparseLDAFattyAcids <-  predict(sparseLdaModelFattyAcids,testFattyAcids)
 confusionMatrix(data =predictionSparseLDAFattyAcids$class,
                 reference = testOilType)
+
+
+
+#######################################################
+########### Nearest Shrunken Centroids ###########
+
