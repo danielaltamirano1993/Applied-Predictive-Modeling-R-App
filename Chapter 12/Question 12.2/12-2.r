@@ -89,3 +89,8 @@ confusionMatrix(data =predictionPLSFattyAcids,
 #######################################################
 ########### Penalized Models ###########
 
+########### Penalized Models for Logistic Regression ###########
+# glmnGrid <- expand.grid(.alpha = c(0, .1, .2, .4),
+#                         .lambda = seq(.01, .2, length = 10))
+glmnGrid <- expand.grid(.alpha = c(0, .1, .2, .4, .6, .8, 1),
+                        .lambda = seq(.01, .2, length = 10))
