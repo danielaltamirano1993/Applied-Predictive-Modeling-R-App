@@ -70,3 +70,8 @@ fdaTuned
 
 ############## Support Vector Machines ##########
 
+library(MASS)
+set.seed(476)
+library(kernlab)
+library(caret)
+
