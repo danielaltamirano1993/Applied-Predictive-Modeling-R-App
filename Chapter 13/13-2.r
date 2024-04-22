@@ -58,3 +58,10 @@ library(MASS)
 set.seed(476)
 marsGrid <- expand.grid(.degree = 1:2, .nprune = 2:38)
 fdaTuned <- train(x = filteredCorFatty, 
+                  y = oilType,
+                  method = "fda",
+                  metric = "Accuracy",
+                  # Explicitly declare the candidate models to test
+                  tuneGrid = marsGrid,
+                  trControl = ctrl)
+
