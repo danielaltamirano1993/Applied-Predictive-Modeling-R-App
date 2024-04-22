@@ -14,3 +14,8 @@ barplot(table(oilType),col=c("yellow"), main="Class Distribution")
 nearZeroVar(fattyAcids,saveMetrics =TRUE)
 
 #remove the correlation between the predictors
+highCorM<-findCorrelation(cor(fattyAcids),cutoff = .75)
+filteredCorFatty <- fattyAcids[,-highCorM]
+
+####### Nonlinear Discriminant Analysis ##########
+
