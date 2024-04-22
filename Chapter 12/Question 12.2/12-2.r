@@ -137,3 +137,6 @@ nscTunedFattyAcids <- train(x = trainFattyAcids,
                      tuneGrid = nscGridFattyAcids,
                      metric = "Accuracy",
                      trControl = ctrl)
+
+predictionNSCFattyAcids <-predict(nscTunedFattyAcids,testFattyAcids)
+confusionMatrix(data =predictionNSCFattyAcids,
