@@ -19,3 +19,6 @@ filteredCorFatty <- fattyAcids[,-highCorM]
 
 ####### Nonlinear Discriminant Analysis ##########
 
+ctrl <- trainControl(summaryFunction = defaultSummary)
+set.seed(476)
+mdaFit <- train(x = filteredCorFatty, 
