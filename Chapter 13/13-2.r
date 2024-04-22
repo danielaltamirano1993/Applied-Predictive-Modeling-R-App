@@ -38,3 +38,7 @@ nnetGrid <- expand.grid(.size = 1:10, .decay = c(0, .1, 1, 2))
 
 maxSize <- max(nnetGrid$.size)
 
+numWts <- 1*(maxSize * (6 + 1) + maxSize + 1) ## 6 is the number of predictors
+
+nnetFit <- train(x = filteredCorFatty, 
+                 y = oilType,
