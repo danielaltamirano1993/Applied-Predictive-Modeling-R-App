@@ -65,3 +65,8 @@ fdaTuned <- train(x = filteredCorFatty,
                   tuneGrid = marsGrid,
                   trControl = ctrl)
 
+fdaTuned
+
+
+############## Support Vector Machines ##########
+
