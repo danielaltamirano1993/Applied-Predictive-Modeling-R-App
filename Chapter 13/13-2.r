@@ -27,3 +27,9 @@ mdaFit <- train(x = filteredCorFatty,
                 metric = "Accuracy",
                 tuneGrid = expand.grid(.subclasses = 1:3),
                 trControl = ctrl)
+mdaPrediction<-predict(mdaFit,filteredCorFatty)
+confusionMatrix(mdaPrediction,oilType)
+
+############### Neural Networks #############
+
+library(nnet)
