@@ -93,3 +93,8 @@ svmRModel <- train(x = filteredCorFatty,
                    fit = FALSE,
                    trControl = ctrl)
 svmRModel
+
+
+############ K-Nearest Neighbors #############
+library(caret)
+set.seed(476)
