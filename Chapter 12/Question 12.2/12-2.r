@@ -140,3 +140,5 @@ nscTunedFattyAcids <- train(x = trainFattyAcids,
 
 predictionNSCFattyAcids <-predict(nscTunedFattyAcids,testFattyAcids)
 confusionMatrix(data =predictionNSCFattyAcids,
+                reference = testOilType)
+
