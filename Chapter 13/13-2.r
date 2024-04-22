@@ -22,3 +22,8 @@ filteredCorFatty <- fattyAcids[,-highCorM]
 ctrl <- trainControl(summaryFunction = defaultSummary)
 set.seed(476)
 mdaFit <- train(x = filteredCorFatty, 
+                y = oilType,
+                method = "mda",
+                metric = "Accuracy",
+                tuneGrid = expand.grid(.subclasses = 1:3),
+                trControl = ctrl)
