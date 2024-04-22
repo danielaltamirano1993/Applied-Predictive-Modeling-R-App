@@ -75,3 +75,9 @@ set.seed(476)
 library(kernlab)
 library(caret)
 
+sigmaRangeReduced <- sigest(as.matrix(filteredCorFatty))
+
+## Given a range of values for the "sigma" inverse width parameter 
+## in the Gaussian Radial Basis kernel for use with SVM.
+## The estimation is based on the data to be used.
+
