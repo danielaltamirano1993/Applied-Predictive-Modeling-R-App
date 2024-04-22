@@ -42,3 +42,12 @@ numWts <- 1*(maxSize * (6 + 1) + maxSize + 1) ## 6 is the number of predictors
 
 nnetFit <- train(x = filteredCorFatty, 
                  y = oilType,
+                 method = "nnet",
+                 metric = "Accuracy",
+                 preProc = c("center", "scale", "spatialSign"),
+                 tuneGrid = nnetGrid,
+                 trace = FALSE,
+                 maxit = 2000,
+                 MaxNWts = numWts,
+                 trControl = ctrl)
+nnetFit
