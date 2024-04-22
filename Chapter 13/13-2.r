@@ -33,3 +33,8 @@ confusionMatrix(mdaPrediction,oilType)
 ############### Neural Networks #############
 
 library(nnet)
+set.seed(476)
+nnetGrid <- expand.grid(.size = 1:10, .decay = c(0, .1, 1, 2))
+
+maxSize <- max(nnetGrid$.size)
+
