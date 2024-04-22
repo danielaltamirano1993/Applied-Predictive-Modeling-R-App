@@ -131,3 +131,9 @@ library(pamr)
 nscGridFattyAcids <- data.frame(.threshold = seq(0,4, by=0.1))
 set.seed(975)
 nscTunedFattyAcids <- train(x = trainFattyAcids, 
+                     y = trainOilType,
+                     method = "pam",
+                     # preProc = c("center", "scale"),
+                     tuneGrid = nscGridFattyAcids,
+                     metric = "Accuracy",
+                     trControl = ctrl)
