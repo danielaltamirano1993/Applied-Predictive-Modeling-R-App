@@ -51,3 +51,10 @@ nnetFit <- train(x = filteredCorFatty,
                  MaxNWts = numWts,
                  trControl = ctrl)
 nnetFit
+
+########## Flexible Discriminant Analysis ############
+
+library(MASS)
+set.seed(476)
+marsGrid <- expand.grid(.degree = 1:2, .nprune = 2:38)
+fdaTuned <- train(x = filteredCorFatty, 
