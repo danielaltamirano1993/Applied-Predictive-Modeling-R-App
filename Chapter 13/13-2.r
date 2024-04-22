@@ -81,3 +81,15 @@ sigmaRangeReduced <- sigest(as.matrix(filteredCorFatty))
 ## in the Gaussian Radial Basis kernel for use with SVM.
 ## The estimation is based on the data to be used.
 
+svmRGridReduced <- expand.grid(.sigma = sigmaRangeReduced[1],
+                               .C = 2^(seq(-4, 6)))
+set.seed(476)
+svmRModel <- train(x = filteredCorFatty, 
+                   y = oilType,
+                   method = "svmRadial",
+                   metric = "Accuracy",
+                   preProc = c("center", "scale"),
+                   tuneGrid = svmRGridReduced,
+                   fit = FALSE,
+                   trControl = ctrl)
+svmRModel
