@@ -121,3 +121,5 @@ nbFit <- train( x = filteredCorFatty,
                 # tuneGrid = data.frame(.k = c(4*(0:5)+1, 20*(1:5)+1, 50*(2:9)+1)), ## 21 is the best
                 tuneGrid = data.frame(.fL = 2,.usekernel = TRUE,.adjust = TRUE),
                 trControl = ctrl)
+
+nbFit
