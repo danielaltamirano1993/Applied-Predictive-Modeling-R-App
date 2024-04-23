@@ -104,8 +104,20 @@ knnFit <- train(x = filteredCorFatty,
                 metric = "Accuracy",
                 preProc = c("center", "scale"),
                 ##tuneGrid = data.frame(.k = c(4*(0:5)+1, 20*(1:5)+1, 50*(2:9)+1)), ## 21 is the best
+                tuneGrid = data.frame(.k = 1:50),
                 trControl = ctrl)
 
 knnFit
 
 
+########## Naive Bayes ##########
+library(klaR)
+set.seed(476)
+nbFit <- train( x = filteredCorFatty, 
+                y = oilType,
+                method = "nb",
+                metric = "Accuracy",
+                ## preProc = c("center", "scale"),
+                # tuneGrid = data.frame(.k = c(4*(0:5)+1, 20*(1:5)+1, 50*(2:9)+1)), ## 21 is the best
+                tuneGrid = data.frame(.fL = 2,.usekernel = TRUE,.adjust = TRUE),
+                trControl = ctrl)
