@@ -104,3 +104,8 @@ knnFit <- train(x = filteredCorFatty,
                 metric = "Accuracy",
                 preProc = c("center", "scale"),
                 ##tuneGrid = data.frame(.k = c(4*(0:5)+1, 20*(1:5)+1, 50*(2:9)+1)), ## 21 is the best
+                trControl = ctrl)
+
+knnFit
+
+
